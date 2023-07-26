@@ -11,7 +11,23 @@
     --font_ubuntu: 'Ubuntu Mono', monospace;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto auto;
+}
 /* Styles Container Header and Nav */
+.container_header_nav {
+    background-color: #FAFBFD;
+    padding-left: 100px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
 /* Style Header */
 .title_header {
     font-family: var(--font_poppins);
@@ -27,6 +43,9 @@
 /* Style Nav */
 .list_nav {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .item_list {
@@ -42,6 +61,15 @@
 }
 
 /* Style Main */
+.main {
+    padding-left: 80px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
 /* Style title main */
 .title_main {
     font-family: var(--font_poppins);
@@ -190,6 +218,11 @@
     border: 1px solid #828282;
 }
 
+/* ------------8-------------- */
+.input_8_1 {
+    width: 1031px;
+}
+
 /* ------------9--------------- */
 .textarea::placeholder {
     font-family: var(--font_noto);
@@ -200,4 +233,68 @@
 
 .textarea {
     resize: none;
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+/* Style Footer */
+.copiryth {
+    font-family: var(--font_montserrat);
+    font-weight: 700;
+    font-size: 14px;
+    color: #9E9E9E;
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+/* Estilos de los containers */
+.container_form_input,
+.container_form_input_2,
+.container_form_input_3,
+.container_3_input,
+.container_form_input_4,
+.container_form_input_5,
+.container_form_input_6,
+.container_6_input,
+.container_form_input_7,
+.container_8_inputs,
+.container_form_input_8,
+.container_9_inputs,
+.container_form_input_9 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container_child_1_1,
+.container_child_1_2,
+.container_child_1_3,
+.container_child_2_1,
+.container_child_2_2,
+.container_child_2_3,
+.container_child_4_1,
+.container_child_4_2,
+.container_child_5_1,
+.container_child_5_2,
+.container_child_7_1,
+.container_child_7_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container_1_input,
+.container_2_input,
+.container_4_input,
+.container_5_input,
+.container_7_input {
+    display: flex;
+    gap: 60px;
 }
